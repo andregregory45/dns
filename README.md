@@ -59,7 +59,7 @@ From DC-1, open DNS Manager and create an A record for the hostname "DC1DNS" tha
 </p>
 
 <p>
-From DC-1, change the "DC1DNS" record's IP address to "8.8.8.8". Return to Client-1, and run "ping DC1DNS". Client-1 is still receiving a reply from "10.0.0.4", despite changing the A record's IP address to "8.8.8.8".
+From DC-1, change the "DC1DNS" record's IP address to "8.8.8.8". Return to Client-1, and run "ping DC1DNS". Client-1 is still receiving a reply from "10.0.0.4", despite changing the A record's IP address to "8.8.8.8". This is because the client always checks its local DNS cache first to prioritize speed before querying the DNS server, and the client has not yet updated its DNS cache (TTL has not expired) to reflect the changes made to the A record.
 </p>
 <br />
 
