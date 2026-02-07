@@ -34,3 +34,12 @@ Log in to Client-1 as the domain admin account (MYDOMAIN\example_admin), then ru
 <p>
 <img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/f04d7e73-c23c-4d63-bfca-65ea0a862d3c" />
 </p>
+
+<p>
+From DC-1, open DNS Manager and create an A record for the hostname "DC1DNS" that maps to DC-1's private IP address (10.0.0.4). Check the box next to "Create associated pointer (PTR) record". This setting enables reverse DNS lookups, which allows DC-1 to resolve an IP address back to a hostname.
+</p>
+<br />
+
+<p>
+<img width="750" height="393" alt="image" src="https://github.com/user-attachments/assets/a816a72c-6f4b-465f-9844-0b22f3bca550" />
+</p>
