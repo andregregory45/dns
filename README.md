@@ -1,6 +1,6 @@
 <h1>Configuring and Troubleshooting DNS</h1>
 
-This project demonstrates the configuration and troubleshooting of DNS using a Domain Controller (DC) as a DNS server in a cloud-based environment. Key highlights include...
+This project demonstrates the configuration and troubleshooting of DNS using a Domain Controller (DC) as a DNS server in a cloud-based environment.
 
 <h2>Environments and Technologies Used</h2>
 
@@ -14,6 +14,11 @@ This project demonstrates the configuration and troubleshooting of DNS using a D
 - Windows 11 Pro, version 25H2
 
 <h2>Table of Contents</h2>
+
+- <a href="#dns-a-record-creation-and-troubleshooting">DNS A Record Creation and Troubleshooting</a>
+- <a href="#local-dns-cache-troubleshooting">Local DNS Cache Troubleshooting</a>
+- <a href="#cname-record-creation-and-resolution">CNAME Record Creation and Resolution</a>
+- <a href="#conclusion">Conclusion</a>
 
 <h2>DNS A Record Creation and Troubleshooting</h2>
 
@@ -61,7 +66,7 @@ From DC-1, open DNS Manager and create an A record for the hostname "DC1DNS" tha
 <h2>Local DNS Cache Troubleshooting</h2>
 
 <p>
-From DC-1, change the "DC1DNS" record's IP address to "8.8.8.8". Return to Client-1, and run "ping DC1DNS". Client-1 is still receiving a reply from "10.0.0.4", despite changing the A record's IP address to "8.8.8.8". This is because the client always checks its local DNS cache first to prioritize speed before querying the DNS server, and the client has not yet updated its DNS cache (TTL has not expired) to reflect the changes made to the A record.
+From DC-1, change the "DC1DNS" record's IP address to "8.8.8.8". Return to Client-1, and run "ping DC1DNS". Client-1 is still receiving a reply from "10.0.0.4" despite changing the A record's IP address to "8.8.8.8". This is because the client always checks its local DNS cache first to prioritize speed before querying the DNS server, and the client has not yet updated its DNS cache (TTL has not expired) to reflect the changes made to the A record.
 </p>
 <br />
 
@@ -107,4 +112,10 @@ On Client-1, run "nslookup search". This confirms that the CNAME record is prope
 
 <p>
 <img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/2ea16f30-b812-4888-8382-5ff0dc12fab4" />
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+This project successfully demonstrated the configuration and troubleshooting of DNS in Azure by creating and troubleshooting A records, troubleshooting the client's DNS cache after changing the A record's settings, and creating a CNAME record that maps a hostname to a Fully Qualified Domain Name (FQDN).
 </p>
