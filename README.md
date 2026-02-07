@@ -25,3 +25,12 @@ This environment consists of two virtual machines (VMs) within a unified virtual
 <p>
 <img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/7f46d88d-3412-4b20-8e49-ab4cd5ddc66f" />
 </p>
+
+<p>
+Log in to Client-1 as the domain admin account (MYDOMAIN\example_admin), then run "ping DC1DNS" and "nslookup DC1DNS" as an administrator. Both of these commands fail because there is no DNS record in the local DNS cache, HOSTS file, or the DNS server that maps the "DC1DNS" hostname to an IP address.
+</p>
+<br />
+
+<p>
+<img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/f04d7e73-c23c-4d63-bfca-65ea0a862d3c" />
+</p>
