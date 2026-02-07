@@ -58,6 +58,8 @@ From DC-1, open DNS Manager and create an A record for the hostname "DC1DNS" tha
 <img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/b63d35f5-8887-41a2-9b7e-71a56026a609" />
 </p>
 
+<h2>Local DNS Cache Troubleshooting</h2>
+
 <p>
 From DC-1, change the "DC1DNS" record's IP address to "8.8.8.8". Return to Client-1, and run "ping DC1DNS". Client-1 is still receiving a reply from "10.0.0.4", despite changing the A record's IP address to "8.8.8.8". This is because the client always checks its local DNS cache first to prioritize speed before querying the DNS server, and the client has not yet updated its DNS cache (TTL has not expired) to reflect the changes made to the A record.
 </p>
@@ -84,4 +86,10 @@ Run "ping DC1DNS" again, and observe that Client-1 is now receiving a reply from
 
 <p>
 <img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/466136b0-1b4c-46a7-97c7-50cf19083831" />
+</p>
+
+<h2>CNAME Records</h2>
+
+<p>
+From DC-1, 
 </p>
