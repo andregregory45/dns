@@ -66,7 +66,7 @@ From DC-1, change the "DC1DNS" record's IP address to "8.8.8.8". Return to Clien
 <br />
 
 <p>
-<img width="685" height="394" alt="image" src="https://github.com/user-attachments/assets/fcb30c3c-71b7-4f63-b444-c69ed9f3d28d" />
+<img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/fcb30c3c-71b7-4f63-b444-c69ed9f3d28d" />
 </p>
 
 <p>
