@@ -27,6 +27,16 @@ This environment consists of two virtual machines (VMs) within a unified virtual
 </p>
 
 <p>
+DC-1 is configured with a static IP address. This prevents connectivity failures that would occur if the DNS server's IP address changed via DHCP renewal. 
+  
+It's important to note that failures may not happen instantly for every resource. If a client recently contacted a domain, its IP address may still be in its local cache. The domain will work until the Time to Live (TTL) expires.
+</p>
+
+<p>
+<img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/7fae1038-708a-49e2-840e-71ab8a8833f8" />
+</p>
+
+<p>
 Log in to Client-1 as the domain admin account (MYDOMAIN\example_admin), then run "ping DC1DNS" and "nslookup DC1DNS" in an elevated Command Prompt. Both of these commands fail because there is no DNS record in the local DNS cache, HOSTS file, or the DNS server that maps the "DC1DNS" hostname to an IP address.
 </p>
 <br />
