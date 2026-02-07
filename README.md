@@ -85,11 +85,16 @@ Run "ping DC1DNS" again, and observe that Client-1 is now receiving a reply from
 </p>
 
 <p>
-<img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/466136b0-1b4c-46a7-97c7-50cf19083831" />
+<img width="700" height="650" alt="image" src="https://github.com/user-attachments/assets/466136b0-1b4c-46a7-97c7-50cf19083831" />
 </p>
 
 <h2>CNAME Records</h2>
 
 <p>
-From DC-1, 
+In DC-1, add a new alias (CNAME) record that maps the hostname "search" to "www.google.com". 
+</p>
+<br />
+
+<p>
+<img width="800" height="750" alt="image" src="https://github.com/user-attachments/assets/40db9728-4cef-43ea-9a1e-776f95e2280d" />
 </p>
