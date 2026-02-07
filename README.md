@@ -15,7 +15,7 @@ This project demonstrates the configuration and troubleshooting of DNS using a D
 
 <h2>Table of Contents</h2>
 
-<h2>DNS A Record Creation</h2>
+<h2>DNS A Record Creation and Troubleshooting</h2>
 
 <p>
 This environment consists of two virtual machines (VMs) within a unified virtual network. A Windows Server 2022 VM serves as the DNS server (DC-1), while a secondary VM running Windows 11 Pro serves as the client (Client-1). Client-1 is joined to DC-1's domain and routes all DNS traffic through DC-1. The configuration looks like this:
@@ -73,6 +73,8 @@ From DC-1, change the "DC1DNS" record's IP address to "8.8.8.8". Return to Clien
 
 <p>
 Observe the DNS cache by running "ipconfig /displaydns", which shows the entry for "DC-1.mydomain.com". Flush the DNS cache by running "ipconfig /flushdns", then run "ipconfig /displaydns" to confirm the cache is empty.
+
+Run "ping DC1DNS" again, and observe that Client-1 is now receiving a reply from 8.8.8.8. Since Client-1's DNS cache has been flushed, Client-1 contacts the DNS server to retrieve the new IP address for the "DC1DNS" A record.
 </p>
 <br />
 
@@ -81,5 +83,5 @@ Observe the DNS cache by running "ipconfig /displaydns", which shows the entry f
 </p>
 
 <p>
-<img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/b72a81c3-a131-44a4-867c-df42198db80d" />
+<img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/466136b0-1b4c-46a7-97c7-50cf19083831" />
 </p>
