@@ -72,9 +72,14 @@ From DC-1, change the "DC1DNS" record's IP address to "8.8.8.8". Return to Clien
 </p>
 
 <p>
-Observe the DNS cache by running "ipconfig /displaydns", which shows the entry for "DC-1.mydomain.com".
+Observe the DNS cache by running "ipconfig /displaydns", which shows the entry for "DC-1.mydomain.com". Flush the DNS cache by running "ipconfig /flushdns", then run "ipconfig /displaydns" to confirm the cache is empty.
+</p>
+<br />
+
+<p>
+<img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/27ffde25-4fa5-4015-81f6-e4b7733bdb40" />
 </p>
 
 <p>
-<img width="672" height="383" alt="image" src="https://github.com/user-attachments/assets/27ffde25-4fa5-4015-81f6-e4b7733bdb40" />
+<img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/b72a81c3-a131-44a4-867c-df42198db80d" />
 </p>
