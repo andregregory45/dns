@@ -70,3 +70,11 @@ From DC-1, change the "DC1DNS" record's IP address to "8.8.8.8". Return to Clien
 <p>
 <img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/6a861178-fe7b-4271-91be-429eb8884b9f" />
 </p>
+
+<p>
+Observe the DNS cache by running "ipconfig /displaydns", which shows the entry for "DC-1.mydomain.com".
+</p>
+
+<p>
+<img width="672" height="383" alt="image" src="https://github.com/user-attachments/assets/27ffde25-4fa5-4015-81f6-e4b7733bdb40" />
+</p>
