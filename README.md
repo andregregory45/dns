@@ -27,7 +27,7 @@ This environment consists of two virtual machines (VMs) within a unified virtual
 </p>
 
 <p>
-Log in to Client-1 as the domain admin account (MYDOMAIN\example_admin), then run "ping DC1DNS" and "nslookup DC1DNS" as an administrator. Both of these commands fail because there is no DNS record in the local DNS cache, HOSTS file, or the DNS server that maps the "DC1DNS" hostname to an IP address.
+Log in to Client-1 as the domain admin account (MYDOMAIN\example_admin), then run "ping DC1DNS" and "nslookup DC1DNS" in an elevated Command Prompt. Both of these commands fail because there is no DNS record in the local DNS cache, HOSTS file, or the DNS server that maps the "DC1DNS" hostname to an IP address.
 </p>
 <br />
 
