@@ -1,6 +1,6 @@
-<h1>Configuring and Troubleshooting DNS Records</h1>
+<h1>Configuring and Troubleshooting DNS</h1>
 
-This project demonstrates the configuration and troubleshooting of DNS records using a Domain Controller (DC) in a cloud-based environment. Key highlights include
+This project demonstrates the configuration and troubleshooting of DNS using a Domain Controller (DC) as a DNS server in a cloud-based environment. Key highlights include
 
 <h2>Environments and Technologies Used</h2>
 
