@@ -29,7 +29,7 @@ This environment consists of two virtual machines (VMs) within a unified virtual
 <p>
 DC-1 is configured with a static IP address. This prevents connectivity failures that would occur if the DNS server's IP address changed via DHCP renewal. 
   
-It's important to note that failures may not happen instantly for every resource. If a client recently contacted a domain, its IP address may still be in its local cache. The domain will work until the Time to Live (TTL) expires.
+It's important to note that failures may not happen instantly for every resource. If a client recently contacted a domain, its IP address may still be in its local cache. The domain will continue to work until the Time to Live (TTL) expires.
 </p>
 
 <p>
