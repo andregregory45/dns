@@ -57,3 +57,12 @@ From DC-1, open DNS Manager and create an A record for the hostname "DC1DNS" tha
 <p>
 <img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/b63d35f5-8887-41a2-9b7e-71a56026a609" />
 </p>
+
+<p>
+From DC-1, change the "DC1DNS" record's IP address to "8.8.8.8". Return to Client-1, and run "ping DC1DNS". 
+</p>
+<br />
+
+<p>
+<img width="685" height="394" alt="image" src="https://github.com/user-attachments/assets/fcb30c3c-71b7-4f63-b444-c69ed9f3d28d" />
+</p>
