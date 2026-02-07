@@ -1,12 +1,12 @@
 <h1>Configuring and Troubleshooting DNS</h1>
 
-This project demonstrates the configuration and troubleshooting of DNS using a Domain Controller (DC) as a DNS server in a cloud-based environment. Key highlights include
+This project demonstrates the configuration and troubleshooting of DNS using a Domain Controller (DC) as a DNS server in a cloud-based environment. Key highlights include...
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop Connection
-- 
+- DNS Manager
 
 <h2>Operating Systems Used</h2>
 
@@ -46,10 +46,14 @@ Log in to Client-1 as the domain admin account (MYDOMAIN\example_admin), then ru
 </p>
 
 <p>
-From DC-1, open DNS Manager and create an A record for the hostname "DC1DNS" that maps to DC-1's private IP address (10.0.0.4). Check the box next to "Create associated pointer (PTR) record". This setting enables reverse DNS lookups, which allows DC-1 to resolve an IP address back to a hostname.
+From DC-1, open DNS Manager and create an A record for the hostname "DC1DNS" that maps to DC-1's private IP address (10.0.0.4). Return to Client-1, and run "ping DC1DNS".
 </p>
 <br />
 
 <p>
 <img width="750" height="393" alt="image" src="https://github.com/user-attachments/assets/a816a72c-6f4b-465f-9844-0b22f3bca550" />
+</p>
+
+<p>
+<img width="750" height="650" alt="image" src="https://github.com/user-attachments/assets/b63d35f5-8887-41a2-9b7e-71a56026a609" />
 </p>
