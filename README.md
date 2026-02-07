@@ -46,7 +46,7 @@ Log in to Client-1 as the domain admin account (MYDOMAIN\example_admin), then ru
 </p>
 
 <p>
-From DC-1, open DNS Manager and create an A record for the hostname "DC1DNS" that maps to DC-1's private IP address (10.0.0.4). Return to Client-1, and run "ping DC1DNS".
+From DC-1, open DNS Manager and create an A record for the hostname "DC1DNS" that maps to DC-1's private IP address (10.0.0.4). Return to Client-1, and run "ping DC1DNS". Client-1 is now receiving a reply from 10.0.0.4 (DC-1).
 </p>
 <br />
 
