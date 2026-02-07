@@ -88,7 +88,7 @@ Run "ping DC1DNS" again, and observe that Client-1 is now receiving a reply from
 <img width="700" height="650" alt="image" src="https://github.com/user-attachments/assets/466136b0-1b4c-46a7-97c7-50cf19083831" />
 </p>
 
-<h2>CNAME Records</h2>
+<h2>CNAME Record Creation and Resolution</h2>
 
 <p>
 In DC-1, add a new alias (CNAME) record mapping the hostname "search" to the FQDN "www.google.com". On Client-1, run "ping search". Because the CNAME directs the client to resolve the target's IP address, Client-1 will resolve "search" to a Google IP and receive an ICMP reply from Google’s server(s).
